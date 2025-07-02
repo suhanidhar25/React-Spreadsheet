@@ -33,14 +33,13 @@ _Replace with actual Vercel or Netlify deployment link_
 
 ### 1. Clone the Repository
 
-```bash
 git clone https://github.com/suhanidhar25/React-Spreadsheet.git
 cd React-Spreadsheet
 
-Install Dependencies
+### 2.Install Dependencies
 npm install
 
-Run the Development Server
+### 3.Run the Development Server
 npm run dev
 
 
