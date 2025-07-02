@@ -1,69 +1,47 @@
-# React + TypeScript + Vite
+# 🧮 React Spreadsheet UI Prototype
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a pixel-perfect **spreadsheet UI** built using **React 18**, **TypeScript**, and **Tailwind CSS**, as part of the React Intern Assignment for Inscripts. It replicates a Google Sheets–like interface as shown in the provided Figma design.
 
-Currently, two official plugins are available:
+### 🔗 Live Demo
+[👉 Click to View Deployed App](https://react-spreadsheet-gamma.vercel.app/)  
+_Replace with actual Vercel or Netlify deployment link_
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📌 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 📊 **Editable Spreadsheet**: Click on cells to edit inline
+- 🎯 **Dropdown Selection**: Status and Priority fields use custom dropdowns
+- 🔄 **Keyboard Navigation**: Move between cells using arrow keys (⬆⬇⬅➡)
+- 💾 **LocalStorage Saving**: Save sheet data in the browser
+- 📎 **Column Toggle**: Show/hide columns dynamically
+- 🎛 **Toolbar & Filters**: Simulated filter/sort/cell view toolbar
+- 🧼 **Pixel-perfect UI**: Matches Figma layout exactly
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🛠️ Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- ⚛️ **React 18** (with Vite)
+- 🧠 **TypeScript (strict mode)**
+- 🎨 **Tailwind CSS** (utility-first styling)
+- 📦 `react-table` *(not used; custom minimal table component built)*
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧪 Getting Started
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/suhanidhar25/React-Spreadsheet.git
+cd React-Spreadsheet
+
+Install Dependencies
+npm install
+
+Run the Development Server
+npm run dev
+
+
+
